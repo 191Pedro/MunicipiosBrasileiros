@@ -1,0 +1,47 @@
+@font-face {
+    font-family: CodecPro;
+    src: url('../fonts/CodecPro-News.ttf');
+}
+
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --font-codecpro: CodecPro;
+    --color-bg-primary: hsl(260, 5%, 95%);
+    --color-bg-secondary: hsl(260, 5%, 90%);
+    --color-bg-tertiary: hsl(260, 5%, 85%);
+    --color-bg-primary-dark: hsl(260, 5%, 10%);
+    --color-bg-secondary-dark: hsl(260, 5%, 15%);
+    --color-bg-tertiary-dark: hsl(260, 5%, 20%);
+    --color-text: hsl(0, 0%, 10%);
+    --color-text-muted: hsl(0, 0%, 15%);
+    --color-text-dark: hsl(0, 0%, 90%);
+    --color-text-muted-dark: hsl(0, 0%, 80%);
+    --color-highlight: hsl(24, 100%, 60%);
+    --color-highlight-hover: hsl(24, 100%, 65%);
+    --color-contrast: hsl(280, 100%, 45%);
+    --color-contrast-hover: hsl(280, 100%, 50%);
+    --color-border: hsl(48, 100%, 60%);
+    --color-border-muted: hsl(48, 80%, 65%);
+    --color-neutral: hsl(260, 5%, 55%);
+    --color-neutral-hover: hsl(260, 5%, 60%);
+    --color-success: hsl(147, 100%, 40%);
+    --color-success-hover: hsl(147, 100%, 45%);
+    --color-warning: hsl(7, 100%, 65%);
+    --color-warning-hover: hsl(7, 100%, 70%);
+    --color-notification: hsl(230, 100%, 65%);
+    --color-notification-hover: hsl(230, 100%, 70%);
+}
+
+body{
+    grid-template-areas: 
+    "box-1 box-1"
+    "box-2 box-3";
+}
