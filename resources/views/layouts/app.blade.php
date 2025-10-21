@@ -8,11 +8,14 @@
             @vite(['resources/css/app.css', 'resources/js/app.js'])
         @endif
     </head>
-    <body class="bg-bg-primary dark:bg-bg-primary-dark text-text dark:text-text-dark font-codecpro min-h-dvh grid grid-cols-[auto_1fr]">
+    <body class="bg-bg-primary dark:bg-bg-primary-dark text-text dark:text-text-dark font-codecpro grid grid-cols-[auto_1fr]">
         @include('components.header')
+        
         @include('components.sidebar')
+        
+        @yield('content', 'nenhum conteúdo renderizado')
 
-        {{-- @yield('content', 'nenhum conteúdo renderizado') --}}
+        @include('components.footer')
 
         {{-- @stack('scripts') --}}
     </body>

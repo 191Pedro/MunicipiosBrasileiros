@@ -39,9 +39,3 @@
     --color-notification: hsl(230, 100%, 65%);
     --color-notification-hover: hsl(230, 100%, 70%);
 }
-
-body{
-    grid-template-areas: 
-    "box-1 box-1"
-    "box-2 box-3";
-}

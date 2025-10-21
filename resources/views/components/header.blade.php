@@ -1,4 +1,4 @@
-<header class="flex justify-center items-center bg-bg-secondary dark:bg-bg-secondary-dark h-[60px] px-[24px]" style="grid-area: box-1">
+<header class="flex justify-center items-center bg-bg-secondary dark:bg-bg-secondary-dark h-[60px] px-[24px] col-span-2 sticky top-0 z-[1]">
     <section class="flex justify-between items-center grow h-full">
         <section>
             <p>Municípios</p>
