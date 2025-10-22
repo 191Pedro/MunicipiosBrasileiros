@@ -21,7 +21,8 @@ function themeFunction() {
 
 themeFunction()
 
-const sidebar = document.getElementById('sidebar')
+const sidebar = document.getElementById('sidebar');
+const sidebarChild = document.querySelector('#id > section')
 const sidebarBtn = document.getElementById('sidebar-button');
 
 sidebarBtn.addEventListener('click', () => {
@@ -37,10 +38,10 @@ sidebarBtn.addEventListener('click', () => {
 function sidebarFunction() {
     if (localStorage.getItem('sidebarMode') == 'closed') {
         sidebar.classList.remove('w-[260px]');
-        sidebar.classList.add('w-[60px]');
+        sidebar.classList.add('w-[80px]', 'closed');
     }
     else {
-        sidebar.classList.remove('w-[60px]');
+        sidebar.classList.remove('w-[80px]', 'closed');
         sidebar.classList.add('w-[260px]');
     }
 }

@@ -1,8 +1,8 @@
 <header class="flex justify-center items-center bg-bg-secondary dark:bg-bg-secondary-dark h-[60px] px-[24px] col-span-2 sticky top-0 z-[1]">
     <section class="flex justify-between items-center grow h-full">
-        <section>
-            <p>Municípios</p>
-            <p>Brasileiros</p>
+        <section class="w-[140px] h-[70px] [&_img]:last:hidden dark:[&_img]:first:hidden dark:[&_img]:last:inline">
+            <img class="size-full" src="{{ asset('svgs/EliminandoMunicipios.svg') }}" alt="EMB-light">
+            <img class="size-full" src="{{ asset('svgs/EliminandoMunicipios-dark.svg') }}" alt="EMB-dark">
         </section>
         <section class="flex justify-center items-center h-full [&_button]:px-[12px] [&_button]:cursor-pointer [&_button]:size-full [&_button]:hover:bg-bg-tertiary dark:[&_button]:hover:bg-bg-tertiary-dark">
             <button id="theme-switch">
