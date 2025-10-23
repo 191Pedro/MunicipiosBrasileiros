@@ -19,7 +19,7 @@ function themeFunction() {
     }
 }
 
-themeFunction()
+themeFunction();
 
 const sidebar = document.getElementById('sidebar');
 const sidebarChild = document.querySelector('#id > section')
@@ -46,4 +46,10 @@ function sidebarFunction() {
     }
 }
 
-sidebarFunction()
+sidebarFunction();
+
+const main = document.getElementById('main');
+
+main.addEventListener('click', () => {
+    closeAllMenus()
+})

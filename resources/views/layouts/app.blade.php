@@ -8,7 +8,7 @@
             @vite(['resources/css/app.css', 'resources/js/app.js'])
         @endif
     </head>
-    <body class="bg-bg-primary dark:bg-bg-primary-dark text-text dark:text-text-dark font-codecpro grid grid-cols-[auto_1fr]">
+    <body class="bg-bg-secondary dark:bg-bg-secondary-dark text-text dark:text-text-dark font-codecpro grid grid-cols-[auto_1fr] duration-300">
         @include('components.header')
         
         @include('components.sidebar')
@@ -17,6 +17,6 @@
 
         @include('components.footer')
 
-        {{-- @stack('scripts') --}}
+        @stack('scripts')
     </body>
 </html>

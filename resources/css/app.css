@@ -14,9 +14,9 @@
 
 @theme {
     --font-codecpro: CodecPro;
-    --color-bg-primary: hsl(260, 5%, 95%);
-    --color-bg-secondary: hsl(260, 5%, 90%);
-    --color-bg-tertiary: hsl(260, 5%, 85%);
+    --color-bg-primary: hsl(45, 30%, 95%);
+    --color-bg-secondary: hsl(45, 25%, 90%);
+    --color-bg-tertiary: hsl(45, 20%, 85%);
     --color-bg-primary-dark: hsl(260, 5%, 10%);
     --color-bg-secondary-dark: hsl(260, 5%, 15%);
     --color-bg-tertiary-dark: hsl(260, 5%, 20%);
@@ -38,4 +38,71 @@
     --color-warning-hover: hsl(7, 100%, 70%);
     --color-notification: hsl(230, 100%, 65%);
     --color-notification-hover: hsl(230, 100%, 70%);
+}
+
+header::after{
+    content: '';
+    position: absolute;
+    height: 24px;
+    width: 24px;
+    background-color: transparent;
+    bottom: 0;
+    right: 8px;
+    transform: translate(0, 100%);
+    border-radius: 12px;
+    box-shadow: 10px -10px 0 var(--color-bg-secondary);
+    transition: 300ms;
+}
+.dark header::after{
+    box-shadow: 10px -10px 0 var(--color-bg-secondary-dark);
+}
+
+aside::after{
+    content: '';
+    position: absolute;
+    height: 24px;
+    width: 24px;
+    background-color: transparent;
+    top: 0;
+    right: 0;
+    transform: translate(100%, 0);
+    border-radius: 12px;
+    box-shadow: -10px -10px 0 var(--color-bg-secondary);
+    transition: 300ms;
+}
+.dark aside::after{
+    box-shadow: -10px -10px 0 var(--color-bg-secondary-dark);
+}
+
+footer::after{
+    content: '';
+    position: absolute;
+    height: 24px;
+    width: 30px;
+    background-color: transparent;
+    top: 0;
+    left: 0;
+    transform: translate(0, -100%);
+    border-bottom-left-radius: 12px;
+    box-shadow: -8px 10px 0 var(--color-bg-secondary);
+    transition: 300ms;
+}
+.dark footer::after{
+    box-shadow: -8px 10px 0 var(--color-bg-secondary-dark);
+}
+footer::before{
+    content: '';
+    position: absolute;
+    height: 24px;
+    width: 30px;
+    background-color: transparent;
+    top: 0;
+    right: 8px;
+    transform: translate(0, -100%);
+    border-radius: 12px;
+    box-shadow: 10px 10px 0 var(--color-bg-secondary);
+    transition: 300ms;
+}
+.dark footer::before{
+    box-shadow: 10px 10px 0 var(--color-bg-secondary-dark);
 }
